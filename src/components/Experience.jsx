@@ -1,8 +1,11 @@
 import css from '../assets/csss.png';
-import html from '../assets/htmls.jpg';
+import html from '../assets/html.png';
 import javascript from '../assets/JavaScript-logo.png';
 import react from '../assets/react.png';
-import tailwind from '../assets/tailwindCSS.png'
+import tailwind from '../assets/tailwind.png';
+import nextjs from '../assets/nextjs.png';
+import github from '../assets/github.png';
+import bootstrap from '../assets/bootstrap.png';
 
 const Experience = () => {
   const techs = [
@@ -21,47 +24,47 @@ const Experience = () => {
     {
       id: 3,
       src: javascript,
-      title: 'JAVASCRIPT',
+      title: 'JavaScript',
       style: 'shadow-yellow-500'
     },
     {
       id: 4,
       src: react,
-      title: 'REACT',
-      style: 'shadow-[#61dbfb]'
+      title: 'React',
+      style: 'shadow-blue-700'
     },
     {
       id: 5,
       src: tailwind,
-      title: 'TAILWIND CSS',
-      style: 'shadow-orange-500'
+      title: 'Tailwind CSS',
+      style: 'shadow-[#44a8b3]'
     },
     {
       id: 6,
-      src: css,
-      title: 'CSS',
-      style: 'shadow-orange-500'
+      src: nextjs,
+      title: 'NEXT.JS',
+      style: 'shadow-white'
     },
     {
       id: 7,
-      src: css,
-      title: 'CSS',
-      style: 'shadow-orange-500'
+      src: bootstrap,
+      title: 'Bootstrap',
+      style: 'shadow-[#7511f7]'
     },
     {
       id: 8,
-      src: css,
-      title: 'CSS',
-      style: 'shadow-orange-500'
+      src: github,
+      title: 'GitHub',
+      style: 'shadow-gray-300'
     },
   ]
   return (
     <div
       name="experience"
       className="bg-gradient-to-b from-gray-800 to-black w-full h-screen text-white">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full ">
         <div >
-          <p className="text-4xl font-bold inline p-2 border-b-4 border-gray-500">
+          <p className="text-4xl font-bold inline p-2 border-b-4 border-gray-500 ">
             Experience
           </p>
           <p className="py-6">These are the technologyies i've work with</p>

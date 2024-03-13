@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -15,6 +16,7 @@ export default function App() {
       <About/>
       <Portfolio />
       <Experience />
+      <Contact />
       <SocialLinks />
     </div>
   )

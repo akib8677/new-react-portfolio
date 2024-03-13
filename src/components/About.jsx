@@ -12,20 +12,13 @@ const About = () => {
           </p>
         </div>
         <p className="text-xl mt-20">
-          Lorem ipsum dolor, sit amet consectetur adipisicing
-          elit. Eius,
-          deserunt illum mollitia officiis qui exercitationem
-          perferendis neque
-          quasi a recusandae necessitatibus tempora iusto!
-          Blanditiis error
-          iste, totam fugiat recusandae rerum laborum perferendis
-          molestiae
-          aperiam asperiores nemo. Magni dolor maxime debitis
-          vitae, eaque hic
-          ab mollitia voluptatibus, a nostrum eveniet laborum!
+          I am frontend Developer with 2+ years of experience in web
+          design and development across diverse industries. Excellent problem-solving and communication
+          skills, Continuous learning and adaptation to emerging technologies in the web development
+          landscape, Proficient in creating scalable APIs, user interfaces and testing code.
         </p>
         <br />
-        <p className='text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corrupti quidem, in eos vero dignissimos vel. Temporibus, alias? Exercitationem, unde consectetur soluta dolore ex est nihil quo fugiat illo. Optio officiis alias nisi numquam blanditiis eos voluptas facere reprehenderit, excepturi possimus a ex eveniet minus commodi ad dolore, enim molestiae.</p>
+        <p className='text-xl'>I have great experience in HTML, CSS, JavaScript and React.js. I am currently working in kfaqs infotech pvt ltd as frontend developer.</p>
       </div>
     </div>
   )

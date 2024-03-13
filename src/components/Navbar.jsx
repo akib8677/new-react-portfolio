@@ -1,43 +1,66 @@
-// src/components/Navbar.js
-import React, { useState } from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineClose } from 'react-icons/ai';
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [toggle, setToggle] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+  const links = [
+    {
+      id: 1,
+      link: 'Home'
+    },
+    {
+      id: 2,
+      link: 'About'
+    },
+    {
+      id: 3,
+      link: 'Portfolio'
+    },
+    {
+      id: 4,
+      link: 'Experience'
+    },
+    {
+      id: 5,
+      link: 'Contact'
+    }
+  ]
+
 
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-3xl font-bold font-signature">Md Akib</div>
-
-        <div className="lg:hidden">
-          {isMobileMenuOpen ? (
-            <AiOutlineClose
-              className="text-white cursor-pointer text-2xl"
-              onClick={toggleMobileMenu}
-            />
-          ) : (
-            <GiHamburgerMenu
-              className="text-white cursor-pointer text-2xl"
-              onClick={toggleMobileMenu}
-            />
-          )}
-        </div>
-
-        <ul className={`lg:flex items-center space-x-4 sm:hidden ${isMobileMenuOpen ? 'flex' : 'hidden'}`}>
-          <li className="text-white">Home</li>
-          <li className="text-white">About</li>
-          <li className="text-white">Portfolio</li>
-          <li className="text-white">Experience</li>
-          <li className="text-white">Contact</li>
-        </ul>
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
+      <div>
+        <h1 className="text-5xl font-signature ml-2">Md Akib</h1>
       </div>
-    </nav>
+      <ul className="hidden md:flex">
+        {
+          links.map(({ id, link }) => (
+            <li key={id} className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200">
+              {link}
+            </li>
+          ))
+        }
+      </ul>
+      <div onClick={() => setToggle(!toggle)} className="cursor-pointer md:hidden pr-10 z-10 text-gray-500">
+        {toggle ? <FaTimes size={30} /> : <FaBars size={30} />}
+      </div>
+
+      {
+        toggle && (
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800">
+            {
+              links.map(({ id, link }) => (
+                <li key={id} className="px-4 cursor-pointer capitalize py-6 text-4xl font-medium text-gray-500 hover:scale-105 duration-200">
+                  {link}
+                </li>
+              ))
+            }
+          </ul>
+        )
+      }
+    </div>
   );
 };
 

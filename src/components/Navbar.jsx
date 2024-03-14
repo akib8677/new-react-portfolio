@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Md Akib</h1>
+        <h1 className="text-5xl font-signature md:ml-2">Md Akib</h1>
       </div>
       <ul className="hidden md:flex">
         {
@@ -44,7 +44,7 @@ const Navbar = () => {
           ))
         }
       </ul>
-      <div onClick={() => setToggle(!toggle)} className="cursor-pointer md:hidden pr-10 z-10 text-gray-500">
+      <div onClick={() => setToggle(!toggle)} className="cursor-pointer md:hidden pr-5 z-10 text-gray-500 ">
         {toggle ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
